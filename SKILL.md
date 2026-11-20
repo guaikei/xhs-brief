@@ -6,6 +6,11 @@ name: xhs-brief
 description: "小红薯数据日报数据源（只读）：关键词搜笔记、爆款选题、笔记详情、评论舆情、博主作品、粉丝获赞与收藏，输出 JSON，不登录不发布。触发词：小红书、小红薯、xhs、rednote、笔记链接、博主主页、竞品监控、KOL筛选、评论分析。用户要查小红书笔记、评论、选题、竞品或舆情时使用；抖音、快手、B站、微博、公众号不要用本技能。"
 license: MIT
 version: 1.2.3
+display_name: "小红薯数据日报｜笔记汇总·互动趋势·涨粉追踪·周报成稿"
+display_name_en: "Xiaohongshu Brief"
+description_zh: "小红薯数据日报数据源（只读，无需登录你的小红书账号，不发布不点赞不评论，无风控封号问题）：一条命令取到小红书公开数据，全部以结构化 JSON 输出，可直接导入 Excel/BI 或交给 AI 汇总成日报/周报。\n\n五类能力：①关键词搜笔记，支持全部/视频/图文类型、综合/最新/最多点赞/最多评论/最多收藏排序、一天/一周/半年时间范围与数量筛选；②单条笔记详情：正文、图片、互动数与作者信息，不含评论；③评论抓取，可按近 N 天过滤，用于评论区情绪与需求归因；④博主作品列表，带发布时间与互动数据；⑤博主粉丝/获赞/收藏画像（--limit 0），用于互动率与 KOL 筛选。\n\n典型产出：每日数据汇总、笔记表现分析、涨粉追踪、发文节奏、选题库、竞品对比、舆情周报、爆款归因报告。\n\n规模：按量 Token 单次最多 10000 条；包月 Token 搜索最多 40、作品最多 30、评论最多 20 条，超限返回 PLAN_LIMIT。仅需 Node.js 16.14+ 与 GUAIKEI_API_TOKEN，零第三方依赖。"
+description_en: "Read-only Xiaohongshu daily-brief data source, no login, no ban risk. One command returns public Xiaohongshu data as structured JSON for Excel, BI or AI-generated daily and weekly reports.\n\nCapabilities: 1) Keyword note search with all/video/image type, relevance/newest/most-liked/most-commented/most-collected sorting, 1-day/1-week/6-month windows and limit filters. 2) Note detail: full text, images, interactions and author info (no comments). 3) Comment scraping with recent-N-day filter for sentiment and demand attribution. 4) Creator post listing with publish time and interactions. 5) Creator profile stats via --limit 0: followers, likes, collects for KOL screening.\n\nOutputs: daily digests, note performance reviews, follower tracking, posting cadence, topic libraries, competitor tables, sentiment reports.\n\nScale: pay-as-you-go up to 10,000 items per call; monthly plans cap search at 40, posts at 30, comments at 20, then PLAN_LIMIT. Needs Node.js 16.14+ and GUAIKEI_API_TOKEN."
+author: "新郑市怪奇信息技术工作室"
 category: 数据分析
 homepage: https://www.guaikei.com
 metadata:
